@@ -1,0 +1,199 @@
+//-------------------------------------------------------------------------------Queue-------------------------------------------------------------------
+
+//1. Implement a Queue using the LinkedList class.
+
+
+public class QueueLinkedList {
+
+	public static void main(String[] args) {
+		Queue queue = new Queue();
+		queue.offer(10);
+		queue.offer(11);
+		queue.offer(12);
+		queue.offer(13);
+		queue.display();
+		queue.poll();
+		queue.display();
+
+	}
+
+}
+
+public class Queue {
+	private class QueueNode
+	{
+		int data;
+		QueueNode next;
+		QueueNode(int data)
+		{
+			this.data = data;
+			this.next = null;
+		}
+	}
+	
+	QueueNode front, rear = null;
+	
+	public void offer(int data)
+	{
+		QueueNode qn = new QueueNode(data);
+		if(this.rear == null)
+		{
+			this.front = this.rear = qn;
+		}
+		else
+		{
+			this.rear.next = qn;
+			this.rear = qn;
+		}
+	}
+	
+	public void poll()
+	{
+		if(this.front == null)
+		{
+			System.out.println("Queue is empty");
+		}
+		else
+		{
+			this.front = this.front.next;
+			
+		}
+	}
+	
+	public void display()
+	{
+		QueueNode temp = this.front;
+		while(temp != null)
+		{
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+	}
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//2. Implement a priority queue using a custom comparator.
+
+import java.util.PriorityQueue;
+import java.util.Comparator;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+      pq.offer(10);
+      pq.offer(2);
+      pq.offer(-4);
+      pq.offer(190);
+      pq.offer(23);
+      pq.offer(56);
+      pq.offer(1);
+       
+     System.out.println(pq);
+     }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//3. Implement a Queue using the PriorityQueue class.
+
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.offer(2);
+        queue.offer(9);
+        queue.offer(4);
+        queue.offer(12);
+        queue.offer(20);
+        System.out.println(queue);
+        queue.poll();
+        System.out.println(queue);
+     }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//4. Implement a Queue using the ArrayDeque class.
+
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        Deque<Integer> queue = new ArrayDeque<>();
+        queue.offerLast(2);
+        queue.offerLast(9);
+        queue.offerLast(4);
+        queue.offerLast(12);
+        queue.offerLast(20);
+        System.out.println(queue);
+        queue.pollFirst();
+        System.out.println(queue);
+     }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//5. Implement a Queue using the PriorityQueue class with a custom comparator.
+import java.util.*;
+
+public class Queue{
+
+    PriorityQueue<QueueElement> pq = new PriorityQueue<>(10, new Comparator<QueueElement>() 
+    {
+        public int compare(QueueElement o1, QueueElement o2 )
+        {
+            return o1.key - o2.key;
+        }
+    });
+    
+   int key=0; 
+    public void offer(int data)
+    {
+        QueueElement queueElement = new QueueElement(key++,data);
+        pq.offer(queueElement);
+    }
+    
+    public Integer poll()
+    {
+        if(pq == null)
+        {
+            System.out.println("Under floww");
+            return null;
+        }
+        return pq.poll().value;
+        
+    }
+
+    
+     public static void main(String []args){
+         Queue q = new Queue();
+         q.offer(2);
+         q.offer(5);
+         q.offer(90);
+         q.offer(67);
+         System.out.println("---------------------------");
+         System.out.println(q.poll());
+         System.out.println(q.poll());
+         System.out.println(q.poll());
+     }
+}
+     
+class QueueElement
+ {
+     int key;
+     int value;
+     QueueElement(int key, int value)
+     {
+         this.key = key;
+         this.value = value;
+     }
+ }

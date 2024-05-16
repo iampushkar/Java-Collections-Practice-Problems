@@ -1,0 +1,313 @@
+//------------------------------------------------------------------LinkedList-------------------------------------------------------------------
+
+//1. Create a LinkedList and perform various operations like add, remove, and iterate over it.
+
+/* Online Java Compiler and Editor */
+import java.util.TreeMap;
+import java.util.PriorityQueue;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+       
+        
+        LinkedList slk = new LinkedList();
+        slk.add(10);
+        slk.add(14);
+        slk.add(12);
+        slk.add(11);
+        slk.add(13);
+        slk.add(11);
+        slk.display();
+        System.out.println(slk.remove());
+        System.out.println(slk.remove());
+        slk.display();
+        System.out.println("Size: " + slk.size());
+     }
+}
+
+
+class LinkedList{
+    
+     private class Node{
+         int data;
+         Node next;
+         Node(int data)
+         {
+             this.data = data;
+             this.next = null;
+         }
+     }
+ 
+    Node head = null;
+    public void add(int data)
+    {
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+    }
+    
+     public int remove()
+    {
+        if(head == null)
+        {
+            return -1;
+        }
+       int data = head.data;
+       head = head.next;
+       return data;
+    }
+    
+    public void display()
+    {
+        Node temphead = head;
+        while(temphead != null)
+        {
+            System.out.print(temphead.data + " ");  
+            temphead = temphead.next; 
+        }
+        System.out.println();
+    }
+    
+    public int size()
+    {
+        int size = 0;
+        Node temphead = head;
+        while(temphead != null)
+        {
+            temphead = temphead.next;
+            size++;
+        }
+        return size;
+    }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//2. Implement a Queue using the LinkedList class.
+
+
+
+public class QueueLinkedList {
+
+	public static void main(String[] args) {
+		Queue queue = new Queue();
+		queue.offer(10);
+		queue.offer(11);
+		queue.offer(12);
+		queue.offer(13);
+		queue.display();
+		queue.poll();
+		queue.display();
+
+	}
+
+}
+
+public class Queue {
+	private class QueueNode
+	{
+		int data;
+		QueueNode next;
+		QueueNode(int data)
+		{
+			this.data = data;
+			this.next = null;
+		}
+	}
+	
+	QueueNode front, rear = null;
+	
+	public void offer(int data)
+	{
+		QueueNode qn = new QueueNode(data);
+		if(this.rear == null)
+		{
+			this.front = this.rear = qn;
+		}
+		else
+		{
+			this.rear.next = qn;
+			this.rear = qn;
+		}
+	}
+	
+	public void poll()
+	{
+		if(this.front == null)
+		{
+			System.out.println("Queue is empty");
+		}
+		else
+		{
+			this.front = this.front.next;
+			
+		}
+	}
+	
+	public void display()
+	{
+		QueueNode temp = this.front;
+		while(temp != null)
+		{
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//3. Implement a Stack using the LinkedList class.
+
+import java.util.TreeMap;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        StackLinkedList slk = new StackLinkedList();
+        slk.push(10);
+        slk.push(14);
+        slk.push(12);
+        slk.push(11);
+        slk.push(13);
+        slk.push(20);
+        slk.push(11);
+        slk.push(22);
+        slk.print();
+        System.out.println(slk.pop());
+        System.out.println(slk.pop());
+        slk.print();
+        System.out.println(slk.size());
+        System.out.println(slk.peek());
+     }
+}
+
+
+class StackLinkedList{
+    
+    private class Node{
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
+        
+    Node head;
+    
+    public void push(int data)
+    {
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+    }
+    
+     public int pop()
+    {
+        if(head == null)
+        {
+            return -1;
+        }
+        int data = head.data;
+        head = head.next;
+        return data;
+    }
+    
+    public int peek()
+    {
+        if(head == null)
+        {
+            return -1;
+        }
+        return head.data;
+    }
+    
+    public void print()
+    {
+        Node headTemp = head;
+        System.out.print("[ ");
+        while(headTemp != null)
+        {
+            System.out.print(headTemp.data + " ");
+            headTemp = headTemp.next;
+        }
+        System.out.print(" ]\n");
+    }
+    
+    public int size()
+    {
+        Node headTemp = head;
+        int size = 0;
+        while(headTemp != null)
+        {
+            headTemp = headTemp.next;
+            size++;
+        }
+        return size;
+    }
+    
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//4. Write a program to check if two LinkedLists are equal.
+
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        LinkedList linkedList1 = new LinkedList();
+        LinkedList linkedList2 = new LinkedList();
+        linkedList1.push(2);
+        linkedList1.push(9);
+        linkedList1.push(4);
+        
+        linkedList2.push(2);
+        linkedList2.push(9);
+        linkedList2.push(6);
+        System.out.println(linkedList1.isEqual(linkedList2));
+     }
+}
+
+class LinkedList
+{
+    private class Node
+    {
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    Node head = null;
+    
+    public void push(int data)
+    {
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+    }
+    public Boolean isEqual(LinkedList linkedList)
+    {
+        Node temp1 = this.head; 
+        Node temp2 = linkedList.head;
+        while(temp1 != null && temp2 != null)
+        {
+            if(temp1.data != temp2.data)
+            {
+                return false;
+            }
+            temp1 = temp1.next;
+            temp2 = temp2.next;
+        }
+        return (temp1==null && temp2==null);
+    }
+}

@@ -1,0 +1,115 @@
+//--------------------------------------------------------------------------HashMap-------------------------------------------------------------------
+
+ //1. Create a HashMap to store the mappings of country names to their capitals.
+
+
+/* Online Java Compiler and Editor */
+import java.util.Set;
+import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        Map<String,String> set = new HashMap<>();
+        set.put("Russia", "Moscow");
+        set.put("United Kingdom","London");
+        set.put("Germany","Berlin");
+        set.put("Spain","Madrid");
+        set.put("Ukraine","Kiev");
+        set.put("Italy","Rome");
+        
+        System.out.println(set);
+     }
+}
+
+ //------------------------------------------------------------------------------------------------------------------------------------------------
+
+ //2. Create a HashMap to store the mappings of employee IDs to their names.
+
+ /* Online Java Compiler and Editor */
+import java.util.Stack;
+import java.util.Queue;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Comparator;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      Map<Integer,String> map = new HashMap<>();
+      map.put(1,"Manu");
+      map.put(3,"Ajay");
+      map.put(2,"Anuj");
+      map.put(4,"Suraj");
+      
+      System.out.println(map);
+     }
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//3. Create a HashMap to store the mappings of city names to their populations.
+
+/* Online Java Compiler and Editor */
+import java.util.HashMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      Map<String,Long> map = new HashMap<>();
+      map.put("Bangalore", 14008262333L);
+      map.put("Mumbai", 174686722111L);
+      map.put("Chennai", 1218534235L);
+      map.put("Pune", 28876567225L);
+      
+      System.out.println(map);
+     }
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//4. Create a HashMap to store the mappings of product names to their prices.
+
+/* Online Java Compiler and Editor */
+import java.util.HashMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      Map<String,Double> map = new HashMap<>();
+      map.put("Sprite", 31.08);
+      map.put("Maaza",35.00);
+      map.put("Slice", 30.15);
+      map.put("Lays",10.00);
+      
+      System.out.println(map);
+     }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//5. Create a HashMap to store the mappings of employee IDs to their departments.
+
+/* Online Java Compiler and Editor */
+import java.util.HashMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      Map<Integer,String> map = new HashMap<>();
+      map.put(4,"Accounts");
+      map.put(3,"HR");
+      map.put(1,"Sales");
+      map.put(2,"Development");
+      
+      System.out.println(map);
+     }
+}

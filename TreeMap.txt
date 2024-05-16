@@ -1,0 +1,135 @@
+//--------------------------------------------------------------------TreeMap------------------------------------------------------------------------
+
+//1. Create a TreeMap and add elements to it. Then, print the elements in sorted order of keys.
+
+import java.util.TreeMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      Map<Integer,String> treeSet = new TreeMap<>();
+      treeSet.put(2,"Manoj");
+      treeSet.put(4,"Anuj");
+      treeSet.put(1,"Vijay");
+      treeSet.put(3,"Venu");
+      
+      System.out.println(treeSet);
+     }
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//2. Create a TreeMap to store the mappings of book titles to their authors.
+
+import java.util.Comparator;
+import java.util.TreeMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      Map<String,String> treeSet = new TreeMap<>();
+      treeSet.put("The Power of your subconscious mind","Joseph Murphy");
+      treeSet.put("You Can","Matthew Adams");
+      treeSet.put("Rich Dad Poor Dad","Robert Kiyosaki");
+      treeSet.put("Don't Believe Everything You Think","Joseph Nguyen");
+      
+      System.out.println(treeSet);
+     }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//3.  Create a TreeMap to store the mappings of words to their frequencies in a given text.
+
+import java.util.TreeMap;
+import java.util.Map;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+      String s = "Peter Piper picked a peck of pickled peppers.A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers,Where’s the peck of pickled peppers Peter Piper picked";
+      Map<String,Integer> treeSet = new TreeMap<>();
+      String[] strArray = s.split("\\s+");
+      for(String str : strArray)
+      {
+          treeSet.put(str, treeSet.getOrDefault(str, 0)+1);
+      }
+      System.out.println(treeSet);
+     }
+}
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//4. Create a TreeMap to store the mappings of student IDs to their details.
+
+/* Online Java Compiler and Editor */
+import java.util.TreeMap;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        TreeMap<Integer,Student> treemap = new TreeMap<>();
+        treemap.put(1,new Student(20,"Manoj","A"));
+        treemap.put(3,new Student(19,"Anuj","B"));
+        treemap.put(2,new Student(21,"Venu","A+"));
+        treemap.put(4,new Student(22,"Sheethal","A"));
+        treemap.put(5,new Student(19,"Rakesh","C"));
+        treemap.put(6,new Student(20,"Rahul","A"));
+        
+        System.out.println(treemap);
+     }
+}
+
+
+class Student {
+    private int age;
+    private String name;
+    private String grade;
+    
+    public Student(int age, String name, String grade)
+    {
+        this.age = age;
+        this.name = name;
+        this.grade = grade;
+    }
+    
+    public int getAge()
+    {
+        return this.age;
+    }
+    
+    public void setAge(int age)
+    {
+        this.age = age;
+    }
+    
+    public String getName()
+    {
+        return this.name;
+    }
+    
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    
+    public String getGrade()
+    {
+        return this.grade;
+    }
+    
+    public void setGrade(String grade)
+    {
+        this.grade = grade;
+    }
+    
+   
+    public String toString()
+    {
+        return "[ Emp Id = " + this.age + " || Name = " + this.name + " || Salary = " + this.grade + " ]";
+    }
+ }

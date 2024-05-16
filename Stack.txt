@@ -1,0 +1,188 @@
+//-----------------------------------------------------------------------------Stack-------------------------------------------------------------------
+
+//1. Implement a Stack using the Stack class in Java.
+
+/* Online Java Compiler and Editor */
+import java.util.Stack;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+      
+        Stack<Integer> stack = new Stack<>();
+        stack.push(2);
+        stack.push(4);
+        stack.push(5);
+        stack.push(3);
+        stack.push(1);
+        stack.push(9);
+        System.out.println(stack);
+        System.out.println(stack.peek());
+        stack.pop();        
+        System.out.println(stack);
+     }
+}
+
+ //------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//2. Implement a Stack using the LinkedList class.
+
+/* Online Java Compiler and Editor */
+import java.util.TreeMap;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        StackLinkedList slk = new StackLinkedList();
+        slk.push(10);
+        slk.push(14);
+        slk.push(12);
+        slk.push(11);
+        slk.push(13);
+        slk.push(20);
+        slk.push(11);
+        slk.push(22);
+        slk.print();
+        System.out.println(slk.pop());
+        System.out.println(slk.pop());
+        slk.print();
+        System.out.println(slk.size());
+        System.out.println(slk.peek());
+     }
+}
+
+
+class StackLinkedList{
+    
+    private class Node{
+        int data;
+        Node next;
+        Node(int data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
+        
+    Node head;
+    
+    public void push(int data)
+    {
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+    }
+    
+     public int pop()
+    {
+        if(head == null)
+        {
+            return -1;
+        }
+        int data = head.data;
+        head = head.next;
+        return data;
+    }
+    
+    public int peek()
+    {
+        if(head == null)
+        {
+            return -1;
+        }
+        return head.data;
+    }
+    
+    public void print()
+    {
+        Node headTemp = head;
+        System.out.print("[ ");
+        while(headTemp != null)
+        {
+            System.out.print(headTemp.data + " ");
+            headTemp = headTemp.next;
+        }
+        System.out.print(" ]\n");
+    }
+    
+    public int size()
+    {
+        Node headTemp = head;
+        int size = 0;
+        while(headTemp != null)
+        {
+            headTemp = headTemp.next;
+            size++;
+        }
+        return size;
+    }
+    
+}
+
+ //------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//3. Implement a Stack using the ArrayDeque class.
+
+/* Online Java Compiler and Editor */
+import java.util.TreeMap;
+import java.util.ArrayDeque;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+       
+        
+        StackArrayDeque slk = new StackArrayDeque();
+        slk.push(10);
+        slk.push(14);
+        slk.push(12);
+        slk.push(11);
+        slk.push(13);
+        slk.push(20);
+        slk.push(11);
+        slk.push(22);
+        slk.print();
+        System.out.println(slk.pop());
+        System.out.println(slk.pop());
+        slk.print();
+        System.out.println(slk.size());
+        System.out.println(slk.peek());
+     }
+}
+
+
+class StackArrayDeque{
+    
+  ArrayDeque<Integer> arrayDeque= new ArrayDeque<Integer>();
+ 
+    public void push(int data)
+    {
+        arrayDeque.offerLast(data);
+    }
+    
+     public int pop()
+    {
+       return arrayDeque.pollLast();
+    }
+    
+    public int peek()
+    {
+        return arrayDeque.peekLast();
+    }
+    
+    public void print()
+    {
+        System.out.println(arrayDeque);
+    }
+    
+    public int size()
+    {
+        return arrayDeque.size();
+    }
+}
+
+ //------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//4. Implement a Stack using the PriorityQueue class with a custom comparator.
+
