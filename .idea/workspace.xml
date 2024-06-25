@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0c63350-fbfc-4111-bb03-728ee21bc50d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/TreeMap/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/TreeMap/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/TreeMap/Q3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/TreeMap/Q4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/TreeSet/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/TreeSet/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList/Q9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashMap/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashMap/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashSet/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashSet/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashSet/Q3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashSet/Q4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashSet/Q5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/hashSet/Q6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/utils/Student.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2gubRkzywjVVoOhIocjnXCixLor" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Q1.executor": "Run",
+    "Application.Q2.executor": "Run",
+    "Application.Q3.executor": "Run",
+    "Application.Q4.executor": "Run",
+    "Application.Q5.executor": "Run",
+    "Application.Q6.executor": "Run",
+    "Application.dev.soni.TreeMap.Q4.executor": "Run",
+    "Application.dev.soni.TreeSet.Q1.executor": "Run",
+    "Application.dev.soni.TreeSet.Q2.executor": "Run",
+    "Application.dev.soni.hashMap.Q1.executor": "Run",
+    "Application.dev.soni.hashMap.Q2.executor": "Run",
+    "Application.dev.soni.hashSet.Q1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "codepractice__pragya",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sonis/Scaler class notes and projects/Java-Collections-Practice-Problems/code.practice.pragya/src/main/java/dev/soni/arrayList",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code.practice.pragya/src/main/java/dev/soni/arrayList" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Q5">
+    <configuration name="Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.soni.hashMap.Q3" />
+      <module name="code.practice.pragya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.soni.hashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.soni.hashMap.Q4" />
+      <module name="code.practice.pragya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.soni.hashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.soni.hashMap.Q5" />
+      <module name="code.practice.pragya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.soni.hashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev.soni.hashMap.Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.soni.hashMap.Q1" />
+      <module name="code.practice.pragya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.soni.hashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev.soni.hashMap.Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.soni.hashMap.Q2" />
+      <module name="code.practice.pragya" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.soni.hashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Q5" />
+        <item itemvalue="Application.Q3" />
+        <item itemvalue="Application.Q4" />
+        <item itemvalue="Application.dev.soni.hashMap.Q2" />
+        <item itemvalue="Application.dev.soni.hashMap.Q1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0c63350-fbfc-4111-bb03-728ee21bc50d" name="Changes" comment="" />
+      <created>1716550403568</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716550403568</updated>
+      <workItem from="1716550404709" duration="11087000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
