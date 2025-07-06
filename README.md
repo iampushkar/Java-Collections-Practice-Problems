@@ -79,3 +79,5 @@ This repository contains a collection of practice problems to help you practice 
 3. [Create a HashMap to store the mappings of city names to their populations.](#problem-3)
 4. [Create a HashMap to store the mappings of product names to their prices.](#problem-4)
 5. [Create a HashMap to store the mappings of employee IDs to their departments.](#problem-5)
+6. 
+Practice
